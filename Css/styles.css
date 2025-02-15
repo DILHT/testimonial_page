@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: hsl(0, 0%, 81%);
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+p{
+    color: hsl(0, 0%, 81%);
+    margin: 0;
+    font-family: "Barlow Semi Condensed", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  h2{
+    font-family: "Barlow Semi Condensed", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+/* .container{
+    display: grid;
+    grid-template-columns: repeat(1,250px);
+    grid-gap: 10px;
+    padding: 20px;
+    margin: 0 auto;
+    justify-content: center;
+} */
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.box{ 
+    padding: 30px;
+    border-radius: 15px;
+    width: 18rem;
+    height: auto;
+  
+    
+
+}
+
+.daniel{
+    background-color: hsl(263, 55%, 52%);
+    
+}
+
+.Jonathan{
+    background-color: hsl(217, 19%, 35%);
+}
+
+.jeanette{
+    background-color: hsl(0, 0%, 100%);
+}
+
+.patrick{
+    background-color: hsl(219, 29%, 14%);
+}
+
+.kira{
+    background-color: hsl(0, 0%, 100%);
+}
+.name1{
+    color: hsl(219, 29%, 14%);
+}
+
+img{
+    width:47px;
+    height: 47px;
+    object-fit: cover;
+    border-radius: 100%;
+
+}
+
+.colorJK{
+    color: hsl(217, 19%, 35%);
+}
+
+.colorw{
+    color:hsl(210, 46%, 95%);
+}
+
+.profile-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.profile-info .text{
+    
+    display: flex;
+    flex-direction: column;
+    line-height:1.0;
+    margin: 0;
+    
+}
+.name .name1{
+    font-family:"Barlow Semi Condensed" ;
+    font-weight: 500;
+}
+.name{
+    color: hsl(210, 46%, 95%);
+    
+}
+
+.id{
+    color: hsla(0, 0%, 46%, 0.5);
+    font-family:"Barlow Semi Condensed" ;
+    font-weight: 500;
+    font-style: thin;
+
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width:1000px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4,250px);
+        column-gap: 38px;
+        row-gap: 28px;
+        
+        grid-template-areas: 
+        "daniel daniel Jonathan kira"
+        "jeanette patrick patrick kira"
+        ;
+
+        padding: 20px;
+        /* border:24px "dashed" red; */
+        border-style:"dashed";
+        border-width: 24px;
+  
+        border-color: red;
+       
+    }
+
+    .daniel{
+         grid-area: daniel;
+         width: 31rem;
+         height: 14rem;
+         padding: 40px;
+        
+    }
+    
+    .Jonathan{
+        grid-area: Jonathan;
+        width: 15.5rem;
+        height:15rem;
+     }
+     #Jonathan{
+         margin-left: 39px;
+     }
+    
+    .jeanette{
+        grid-area: jeanette;
+        height: 15rem;
+    }
+    
+    .patrick{
+        
+        grid-area: patrick;
+        width: 31rem;
+        height: 15rem;
+
+    }
+    
+    .kira{
+
+        grid-area: kira;
+        width: 13rem;
+        height: 35rem;
+        margin-top:72px;
+    
+      
+    }
+    #kira{
+        margin-left: 80px;
+    }
+
+    #patrick{
+        margin-left: 80px;
+    }
+    .box{
+        margin: 0;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
